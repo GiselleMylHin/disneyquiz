@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Character Personality Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="intro" class="intro">
+            <h1>Welcome to the Disney Character Personality Quiz!</h1>
+            <p>Answer a series of questions to discover which Disney character you are most like! You may relate to more than one answer, but do your best to select the most relatable one! Thank you for attending this event! -CAPED Officers</p>
+            <button id="start-button" class="nav-button">I’m Ready!</button>
+        </div>
+
+        <div id="quiz" class="quiz" style="display: none;">
+            <h1>Disney Character Personality Quiz</h1>
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <form id="quiz-form">
+                <div id="question-container" class="question-container"></div>
+                <div class="button-container">
+                    <button type="button" id="back-button" class="nav-button" disabled>Back</button>
+                    <button type="button" id="next-button" class="nav-button">Next</button>
+                    <button type="button" id="submit-button" class="nav-button" style="display: none;">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="result" class="result" style="display: none;"></div>
+        <div id="character-info" class="character-info" style="display: none;"></div>
+        <div id="recommendations" class="recommendations" style="display: none;"></div>
+        <div id="characters-link" class="characters-link" style="display: none;">
+            <button id="view-characters-button" class="nav-button">View Other Character Profiles</button>
+        </div>
+
+        <div id="characters-profiles" class="characters-profiles" style="display: none;">
+            <h2>Character Profiles</h2>
+            <div id="character-profiles-container"></div>
+            <button id="back-to-quiz" class="nav-button">Back to Quiz</button>
+        </div>
+
+        <button id="restart-button" class="nav-button" style="display: none;">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
